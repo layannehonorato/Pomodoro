@@ -1,0 +1,157 @@
+$backgraund-page: #f5e6e6;
+$textColor: #f0f0f0;
+$red:#BF0404;
+$orange:#f38a3f;
+$green: green;
+$backgraund-card:rgb(74, 161, 74);
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@mixin align-flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+    width: 100%;
+
+}
+
+@mixin mobile{
+	@media (max-width:800px){
+		@content;
+	}
+}
+/*Geral ===========================================*/
+
+    body{
+        background-color: $backgraund-page;
+        img{
+            display: none;
+        }
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 5rem;
+        padding: 1rem;
+        span{
+            display: none;
+            font-size: 10em;
+            transform: rotate(90deg);
+            text-align: center;
+            color: $red;
+        }
+        @include mobile(){
+            padding: 2rem;
+            margin-top: 2rem;
+            width: 100%;
+            img{
+                display: block;
+            }
+            span{
+                display: block;
+            }
+        }
+        a{
+            text-decoration: none;
+            background-color: rgb(233, 229, 30);
+            padding: 2rem;
+            font-size: 1.5em;
+            color:rgb(2, 66, 2);
+            border-radius: 100px;
+            &:hover{
+                background-color: rgb(2, 66, 2);
+                color:rgb(233, 229, 30); 
+            }
+        }
+    
+    }
+/*Área dos cards ===========================================*/
+
+    #selection-time{
+        display: flex;
+        flex-direction: row;
+        column-gap: 5rem;
+        row-gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        .card-container{
+            display: flex;
+            width: 19rem;
+            padding: 1rem;
+            background-color: $backgraund-card;
+            border-radius: 20px;
+        }
+
+    }
+
+    #title{
+        font-size:4em;
+        color: $red;
+        margin-bottom: 5rem;
+        @include mobile(){
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .card-text{
+        display: flex;
+        flex-direction: column;
+        color: $green;
+        font-size: 2em;
+        width: 80%;
+        padding: 1rem;
+        @include mobile(){
+            font-size: 2.2em;
+        }
+        h1{
+            color: rgb(2, 66, 2);
+        }
+        h3{
+            color: $backgraund-page;
+        }
+        small{
+            color: $backgraund-page;
+        }
+    }
+
+    .arrows{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        width: 20%;
+        padding: 1rem;
+        @include mobile(){
+            row-gap: 2rem;
+        }
+        
+        .arrow-increment{
+            transform: rotate(-90deg);
+            cursor: pointer;
+            color: rgb(2, 66, 2);
+            p{
+                font-size: 3em;
+            }
+            &:hover{
+                color: rgb(233, 229, 30);
+            }
+        }
+        .arrow-decrement{
+            cursor: pointer;
+            transform: rotate(90deg);
+            color: rgb(2, 66, 2);
+            p{
+                font-size: 3em;
+            }
+            margin-left: 0.5rem;
+            &:hover{
+                color: rgb(233, 229, 30);
+            }
+        }
+    }
+
+

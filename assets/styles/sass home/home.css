@@ -1,0 +1,188 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*Geral ===========================================*/
+body {
+  background-color: #f5e6e6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-top: 5rem;
+  padding: 1rem;
+}
+
+body img {
+  display: none;
+}
+
+body span {
+  display: none;
+  font-size: 10em;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  text-align: center;
+  color: #BF0404;
+}
+
+@media (max-width: 800px) {
+  body {
+    padding: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+  }
+  body img {
+    display: block;
+  }
+  body span {
+    display: block;
+  }
+}
+
+body a {
+  text-decoration: none;
+  background-color: #e9e51e;
+  padding: 2rem;
+  font-size: 1.5em;
+  color: #024202;
+  border-radius: 100px;
+}
+
+body a:hover {
+  background-color: #024202;
+  color: #e9e51e;
+}
+
+/*Área dos cards ===========================================*/
+#selection-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 5rem;
+          column-gap: 5rem;
+  row-gap: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#selection-time .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 19rem;
+  padding: 1rem;
+  background-color: #4aa14a;
+  border-radius: 20px;
+}
+
+#title {
+  font-size: 4em;
+  color: #BF0404;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 800px) {
+  #title {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.card-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: green;
+  font-size: 2em;
+  width: 80%;
+  padding: 1rem;
+}
+
+@media (max-width: 800px) {
+  .card-text {
+    font-size: 2.2em;
+  }
+}
+
+.card-text h1 {
+  color: #024202;
+}
+
+.card-text h3 {
+  color: #f5e6e6;
+}
+
+.card-text small {
+  color: #f5e6e6;
+}
+
+.arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1rem;
+  width: 20%;
+  padding: 1rem;
+}
+
+@media (max-width: 800px) {
+  .arrows {
+    row-gap: 2rem;
+  }
+}
+
+.arrows .arrow-increment {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  cursor: pointer;
+  color: #024202;
+}
+
+.arrows .arrow-increment p {
+  font-size: 3em;
+}
+
+.arrows .arrow-increment:hover {
+  color: #e9e51e;
+}
+
+.arrows .arrow-decrement {
+  cursor: pointer;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  color: #024202;
+  margin-left: 0.5rem;
+}
+
+.arrows .arrow-decrement p {
+  font-size: 3em;
+}
+
+.arrows .arrow-decrement:hover {
+  color: #e9e51e;
+}
+/*# sourceMappingURL=home.css.map */
