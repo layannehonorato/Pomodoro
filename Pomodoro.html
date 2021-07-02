@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/sass home/home.css">
+    <link rel="icon" type="imagem/png" href="./imagens/icon.ico" />
+    <title>Pomodoro</title>
+</head>
+<body>
+
+    <h1 id="title">Pomodoro</h1>
+    <img src="./imagens/Frame.png" alt="">
+    <span>🠖</span>
+    <section id="selection-time"><!--Definição de tempo-->
+        <div class="card-container">
+            <div class="arrows">
+                <div class="arrow-increment" id="arrowPlusWork"><p>&#10148;</p></div>
+                <div class="arrow-decrement" id="arrowMinusWork"><p>&#10148;</p></div>
+            </div>
+            <div class="card-text">
+                <h3>Trabalho</h3>
+                <div class="card" id="valueWork"><h1>25</h1></div><small>minutos</small>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="arrows">
+                <div class="arrow-increment" id="arrowPlusBreak"><p>&#10148;</p></div>
+                <div class="arrow-decrement" id="arrowMinusBreak"><p>&#10148;</p></div>
+            </div>
+            <div class="card-text">
+                <h3>Pausa</h3>
+                <div class="card" id="valueBreak"><h1>5</h1></div><small>minutos</small>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="arrows">
+                <div class="arrow-increment" id="arrowPlusSession"><p>&#10148;</p></div>
+                <div class="arrow-decrement"id="arrowMinusSession"><p>&#10148;</p></div>
+            </div>
+            <div class="card-text"  style="margin-top: 1.5rem;">
+                <h3>Sessões</h3>
+                <div class="card" id="valueSession"><h1>3</h1></div>
+            </div>
+        </div>
+    </section>
+    <div style="margin-top: 5rem;">
+        <a href="./pages/pomodoro.html">Continuar</a>
+    </div>
+
+    <script src="./scripts/scripthome.js"></script>
+</body>
+</html>
